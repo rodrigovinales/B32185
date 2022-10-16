@@ -1,6 +1,4 @@
 const fs = require("fs");
-const { stringify } = require("querystring");
-
 let productos = []
 
 const producto1 = {
