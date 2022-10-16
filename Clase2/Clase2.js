@@ -48,7 +48,7 @@ class Contenedor {
         try {
             producto['id'] = productos.length + 1;
             productos.push(producto)
-            await fs.promises.writeFile('./productos.txt', JSON.stringify(productos, '\n'))
+            await fs.promises.writeFile('./productos.txt', JSON.stringify(productos, null, '\t'))
         }
         catch (err) {
             console.log(err)
@@ -85,7 +85,7 @@ class Contenedor {
             const resultado = await fs.promises.readFile('./productos.txt', 'utf-8')
             const conversion = JSON.parse(resultado)
             let Array = conversion.filter((item) => item.id !== id);
-            fs.promises.writeFile('./productos.txt', JSON.stringify(Array), console.log(Array))
+            fs.promises.writeFile('./productos.txt', JSON.stringify(Array, null, '\t'))
         }
         catch (err) {
             console.log(err)
@@ -120,7 +120,7 @@ const misProductos = new Contenedor();
 
 
 // misProductos.getById(4)
-misProductos.getAll()
-// misProductos.deleteById(1)
+// misProductos.getAll()
+misProductos.deleteById(1)
 // misProductos.DeleteAll()
 
