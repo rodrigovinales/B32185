@@ -1,0 +1,15 @@
+{
+  "name": "clase5-6",
+  "version": "1.0.0",
+  "description": "Clase 5 y 6 Backend",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
