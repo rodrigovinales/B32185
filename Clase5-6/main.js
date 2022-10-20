@@ -1,18 +1,6 @@
-const http = require('http')
 const express = require('express')
 const app = express()
-const PORT = 1977
-
-
-
-// const server = http.createServer((peticion, respuesta) => {
-//     respuesta.end('Hola mundo')
-//  })
- 
-//  const connectedServer = server.listen(8080, () => {
-//     console.log(`Servidor Http escuchando en el puerto ${connectedServer.address().port}`)
-//  })
- 
+const PORT = 8080 
 
 app.get('/productos', (req, res) => {
     res.send({ mensaje: 'Pagina Productos' })

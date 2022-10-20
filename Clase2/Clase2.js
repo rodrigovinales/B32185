@@ -119,8 +119,8 @@ const misProductos = new Contenedor();
 // misProductos.save(producto5)
 
 
-// misProductos.getById(4)
+misProductos.getById(4)
 // misProductos.getAll()
-misProductos.deleteById(1)
+// misProductos.deleteById(1)
 // misProductos.DeleteAll()
 
