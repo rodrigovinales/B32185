@@ -1,18 +1,15 @@
-const express = require('express')
-const app = express()
-const PORT = 8080 
+const { conectar } = require("./server");
 
-app.get('/productos', (req, res) => {
-    res.send({ mensaje: 'Pagina Productos' })
- })
- 
- app.get('/productoRandom', (req, res) => {
-    res.send({ mensaje: 'Pagina Randoms' })
- })
+const PORT = 8080
+
+async function main() {
+    try {
+        const server = await conectar(PORT);
+        console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
+    } catch (error) {
+        console.log('algo falló: ' + error);
+    }
+}
 
 
-const server = app.listen(PORT, () => {
-   console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
-})
-server.on("error", error => console.log(`Error en servidor ${error}`))
-
+main()
