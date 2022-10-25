@@ -1,7 +1,9 @@
 const express = require('express')
 const fs = require('fs')
 const app = express()
-const ruta = "./productos.txt"
+let Contenedor = require("./contenedor.js")
+const archivo = "./productos.txt"
+let newContenedor = new Contenedor(archivo)
 
 app.get("/", (req, res) => {
     let titulo = `<h1 style="color:red; background-color:whitesmoke; text-align:center">Clase BackEnd NPM Clase 5-6</h1><hr><a href="/productos"><button>IR A PRODUCTOS</button></a><hr><a href="/productoRandom"><button>IR A PRODUCTOS ALEATORIOS</button></a><hr><p>Click en los botones te ahorra de escribir en el navegador !!!</p>`
@@ -10,8 +12,13 @@ app.get("/", (req, res) => {
 
 app.get('/productos', (req, res) => {
     (async () => {
-        res.send(await fs.promises.readFile(ruta, 'utf-8'))
-    })()
+        contenido = await newContenedor.getAll();
+        let productos = [];
+        contenido.forEach(element => {
+            productos.push(element.title);
+        });
+        res.send(productos)
+    })();
 
 })
 
@@ -19,7 +26,7 @@ app.get('/productoRandom', (req, res) => {
     let randomNumber = Math.ceil(Math.random() * (5)) - 1;
     (async () => {
         try {
-            const resultado = await fs.promises.readFile(ruta, 'utf-8')
+            const resultado = await fs.promises.readFile(archivo, 'utf-8')
             const conversion = JSON.parse(resultado)
             conversion.forEach(element => {
                 if (randomNumber == element.id) {
