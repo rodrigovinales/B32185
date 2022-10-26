@@ -109,8 +109,27 @@ class Contenedor {
     }
 }
 
+async function testeo() {
+    const misProductos = new Contenedor();
 
-const misProductos = new Contenedor();
+    // await misProductos.save(producto1)
+    // await misProductos.save(producto2)
+    // await misProductos.save(producto3)
+    // await misProductos.save(producto4)
+    // await misProductos.save(producto5)
+
+
+    // await misProductos.getById(4)
+    // await misProductos.getAll()
+    // await misProductos.deleteById(1)
+    // await misProductos.DeleteAll()
+
+
+}
+
+testeo()
+
+// const misProductos = new Contenedor();
 
 // misProductos.save(producto1)
 // misProductos.save(producto2)
@@ -119,7 +138,7 @@ const misProductos = new Contenedor();
 // misProductos.save(producto5)
 
 
-misProductos.getById(4)
+// misProductos.getById(4)
 // misProductos.getAll()
 // misProductos.deleteById(1)
 // misProductos.DeleteAll()

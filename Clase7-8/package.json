@@ -1,11 +1,12 @@
 {
-  "name": "clase5-6",
+  "name": "clase7-8",
   "version": "1.0.0",
-  "description": "Clase 5 y 6 Backend",
-  "main": "main.js",
+  "description": "Express Avanzado / Router-Multer",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon main.js"
+
   },
   "author": "",
   "license": "ISC",
