@@ -1,15 +1,27 @@
-const { conectar } = require("./server");
+const express = require('express')
+const fs = require('fs')
+const app = express()
+const { apiRouter } = require('./apis/apiRouter.js')
 
-const PORT = 8080
 
-async function main() {
-    try {
-        const server = await conectar(PORT);
-        console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
-    } catch (error) {
-        console.log('algo falló: ' + error);
-    }
+// MiddleWares
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use("/public", express.static('archivos'))
+
+// Ruta utilizada
+app.use('/api/productos', apiRouter)
+
+
+
+//Conecta Puerto
+function conectar(puerto = 0) {
+    return new Promise((resolve, reject) => {
+        const servidorConectador = app.listen(puerto, () => {
+            resolve(servidorConectador)
+        })
+        servidorConectador.on("error", error => reject(error))
+    })
 }
 
-
-main()
+module.exports = { conectar }

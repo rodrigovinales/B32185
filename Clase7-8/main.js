@@ -1,14 +1,14 @@
-const express = require('express')
-const app = express()
+const { conectar } = require("./server");
+const PORT = 8080
 
-
-function conectar(puerto = 0) {
-    return new Promise((resolve, reject) => {
-        const servidorConectador = app.listen(puerto, () => {
-            resolve(servidorConectador)
-        })
-        servidorConectador.on("error", error => reject(error))
-    })
+async function main() {
+    try {
+        const server = await conectar(PORT);
+        console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
+    } catch (error) {
+        console.log('algo falló: ' + error);
+    }
 }
 
-module.exports = { conectar }
+
+main()
