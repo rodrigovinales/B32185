@@ -55,12 +55,13 @@ function putProductos(req, res) {
         const modificacion = req.body;
         const resultado = await fs.promises.readFile('./productos.txt', 'utf-8')
         const conversion = JSON.parse(resultado)
-        if (Number(id) > conversion.length) {
+        const buscado = conversion.find(c => c.id == id);
+        if (!buscado) {
             res.status(404);
             res.send("Error, el producto no existe")
         } else {
             let nuevoProducto = { ...modificacion, id: id }
-            conversion.splice(Number(id) - 1, 1, nuevoProducto)
+            conversion.splice(buscado.id - 1, 1, nuevoProducto)
             await fs.promises.writeFile('./productos.txt', JSON.stringify(conversion, null, '\t'))
             res.json(conversion)
         }
