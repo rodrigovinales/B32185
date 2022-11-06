@@ -1,0 +1,46 @@
+[
+	{
+		"title": "Escuadra",
+		"price": 123.45,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+		"id": 1
+	},
+	{
+		"title": "Calculadora",
+		"price": 234.56,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+		"id": 2
+	},
+	{
+		"title": "Globo Terráqueo",
+		"price": 345.67,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+		"id": 3
+	},
+	{
+		"title": "Bandera de colores",
+		"price": 2300,
+		"thumbnail": "https://www.shutterstock.com/es/image-vector/vector-set-national-flag-mauritius-various-1786374875",
+		"id": 4
+	},
+	{
+		"title": "Corazones con banderas",
+		"price": 3690,
+		"thumbnail": "https://www.shutterstock.com/es/image-vector/espana-spain-flag-different-countries-flags-1380451250",
+		"id": 5
+	},
+	{
+		"title": "Un producto hecho a mano",
+		"price": "900.99",
+		"thumbnail": "https://www.iconfinder.com/icons/2890589/ai_artificial%20intelligence_brain_electronics_robotics_smartphone_technology_icon",
+		"id": 1667773576814,
+		"timestamp": "6/11/2022"
+	},
+	{
+		"title": "otro producto y el ultimo que pongo",
+		"price": "3884",
+		"thumbnail": "https://thumbs.dreamstime.com/z/girl-power-vector-hand-drawn-illustration-girl-biting-pomade-isolated-creative-artwork-girl-power-vector-hand-drawn-163585986.jpg",
+		"id": 1667773698382,
+		"timestamp": "6/11/2022"
+	}
+]
