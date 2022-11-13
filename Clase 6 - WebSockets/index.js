@@ -24,7 +24,6 @@ io.on('connection', socket => {
     socket.on('update', producto => {
         productos.guardarProducto(producto)
         io.sockets.emit('productos', contenidoProductos);
-
     })
 
     socket.on('nuevoMensaje', mensaje => {

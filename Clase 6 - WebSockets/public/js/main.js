@@ -9,8 +9,7 @@ formAgregarProducto.addEventListener('submit', e => {
     const producto = {
         title: formAgregarProducto[0].value,
         price: formAgregarProducto[1].value,
-        thumbnail: formAgregarProducto[2].value,
-
+        thumbnail: formAgregarProducto[2].files[0].name,
     }
 
     socket.emit('update', producto);
