@@ -1,0 +1,27 @@
+[
+	{
+		"autor": "Admin",
+		"texto": "Bienvenidos",
+		"fecha": "13/11/2022 13:55:15"
+	},
+	{
+		"autor": "Rodrigo",
+		"texto": "Hola",
+		"fecha": "13/11/2022 13:55:12"
+	},
+	{
+		"autor": "dos veces??",
+		"texto": "Porque?",
+		"fecha": "13/11/2022 13:55:26"
+	},
+	{
+		"autor": "Uno mas en el monton",
+		"texto": "geronimo",
+		"fecha": "13/11/2022 13:56:44"
+	},
+	{
+		"autor": "Edge",
+		"texto": "Estoy probando desde Edge",
+		"fecha": "13/11/2022 14:21:53"
+	}
+]
