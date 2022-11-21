@@ -1,0 +1,23 @@
+[
+	{
+		"name": "le saque el splice",
+		"description": "Un producto agregado por thunder",
+		"image": "cualquiera",
+		"price": "232",
+		"id": "298418e3-23f6-4212-8bbf-24362cd1c28e"
+	},
+	{
+		"name": "segundo prodcuto agregado",
+		"description": "Un producto agregado por thunder",
+		"image": "cualquiera",
+		"price": "232",
+		"id": "cf96b27f-9fa5-46a1-83d6-b6835wsddc4b"
+	},
+	{
+		"name": "segundo prodcuto agregado",
+		"description": "Un producto agregado por thunder",
+		"image": "cualquiera",
+		"price": "232",
+		"id": "298418e3-23f6-4212-8bbf-24362cd1c28e"
+	}
+]
