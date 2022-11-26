@@ -1,0 +1,20 @@
+{
+  "name": "clase8",
+  "version": "1.0.0",
+  "description": "Sql y Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "knex": "^2.3.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "socket.io": "^4.5.4"
+  }
+}
