@@ -1,13 +1,23 @@
 const express = require('express')
+const app = express()
 // import express from 'express'
 const { Server: HttpServer } = require('http')
 // import HttpServer from 'http'
 const { Server: Socket } = require('socket.io')
 // import * as Socket from 'socket.io'
-
-const app = express()
 const httpServer = new HttpServer(app)
 const io = new Socket(httpServer)
+
+const {routerProductos, producto} = require('./routes/routerProductos')
+
+//--------------------------------------------
+// agrego middlewares
+
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(express.static('public'))
+
+app.use('/api', routerProductos)
 
 const Mensajes = require('./apis/apiMensajes');
 const Producto = require('./apis/apiProducto.js')
@@ -36,12 +46,6 @@ io.on('connection', socket => {
     })
 });
 
-//--------------------------------------------
-// agrego middlewares
-
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
-app.use(express.static('public'))
 
 //--------------------------------------------
 
