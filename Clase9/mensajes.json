@@ -1,0 +1,52 @@
+[
+	{
+		"author": "Admin",
+		"text": "Bienvenidos",
+		"date": "05/12/2022 14:24:12"
+	},
+    {
+		"author": "Visitante1",
+		"text": "Hola como van",
+		"date": "05/12/2022 14:24:14"
+	},
+    {
+		"author": "Visitante3",
+		"text": "Aca estamos",
+		"date": "05/12/2022 14:24:20"
+	},
+    {
+		"author": "Visitante4",
+		"text": "Todavia luchando con sql chicos?",
+		"date": "05/12/2022 14:24:25"
+	},
+    {
+		"author": "Visitante5",
+		"text": "Aca renegando con el primer desafio, no molestes",
+		"date": "05/12/2022 14:24:36"
+	},
+	{
+		"author": "Admin",
+		"text": "Bienvenidos de nuevo, payasos",
+		"date": "05/12/2022 14:25:02"
+	},
+    {
+		"author": "Visitante1",
+		"text": "Otra vez? estoy viendo el partido",
+		"date": "05/12/2022 14:25:15"
+	},
+    {
+		"author": "Visitante2",
+		"text": "no molesten que voy a apagar la compu",
+		"date": "05/12/2022 14:26:00"
+	},
+    {
+		"author": "Visitante4",
+		"text": "Todavia luchando con sql chicos?",
+		"date": "05/12/2022 14:26:39"
+	},
+    {
+		"author": "Visitante5",
+		"text": "De nuevo preguntas lo mismo???",
+		"date": "05/12/2022 14:26:42"
+	}
+]

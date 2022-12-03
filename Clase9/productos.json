@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Teclado",
+        "price": 120
+    },
+    {
+        "id": 2,
+        "title": "Mouse",
+        "price": 580
+    },
+    {
+        "id": 3,
+        "title": "Router",
+        "price": 900
+    },
+    {
+        "id": 4,
+        "title": "Celular",
+        "price": 1280
+    },
+    {
+        "id": 5,
+        "title": "Monitor",
+        "price": 1700
+    },
+    {
+        "id": 6,
+        "title": "DiscoRigido",
+        "price": 2300
+    },
+    {
+        "id": 7,
+        "title": "MemoriaRam",
+        "price": 2860
+    },
+    {
+        "id": 8,
+        "title": "Impresora",
+        "price": 3350
+    },
+    {
+        "id": 9,
+        "title": "Parlantes",
+        "price": 4320
+    },
+    {
+        "id": 10,
+        "title": "Auriculares",
+        "price": 4990
+    }
+]
